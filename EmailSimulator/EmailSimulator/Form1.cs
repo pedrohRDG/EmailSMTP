@@ -55,19 +55,47 @@ namespace EmailSimulator
             }
         }
 
-        private void bEnviarEmail(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tEmail_Validating(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            if (!IsValidEmail(tEmail.Text))
+       public void ValidaCampoEmail(TextBox prEmail) 
+       {
+            if (!IsValidEmail(prEmail.Text))
             {
-                ErroEmail.SetError(tEmail, "O email é invalido");
-                MessageBox.Show(tEmail.Text + " não é um email valido", "Email invalido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tEmail.Clear();
+                Erro.SetError(prEmail, "Email Invalido");
+                MessageBox.Show(prEmail.Text + " Não é um email valido", "Email invalido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                prEmail.Clear();
+                prEmail.Focus();
+            }
+            else
+            {
+                Erro.SetError(prEmail, null);
             }
         }
+
+       public void VerificaCampoObrigatorio(TextBox prCampo)
+        {
+            if (string.IsNullOrEmpty(prCampo.Text))
+            {
+                Erro.SetError(prCampo, "Campo Obrigatorio");
+                prCampo.Focus();
+            }
+            else
+            {
+                Erro.SetError(prCampo, null);
+            }
+        }
+
+
+        private void bEnviarEmail(object sender, EventArgs e)
+        {
+            //CamposObrigatorios
+            VerificaCampoObrigatorio(tAssunto);
+            VerificaCampoObrigatorio(tMensagem);
+            VerificaCampoObrigatorio(tEmailCliente);
+            VerificaCampoObrigatorio(tEmailRemetente);
+
+            //ValidaEmails
+            ValidaCampoEmail(tEmailRemetente);
+            ValidaCampoEmail(tEmailCliente);
+        }
+
     }
 }
