@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Pedro\\.nuget\\packages\\": {}
+    "C:\\Users\\Escalasoft\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro\\Desktop\\EmailSimulator\\EmailSimulator\\EmailSimulator\\EmailSimulator.csproj",
+      "projectUniqueName": "C:\\Users\\Escalasoft\\Desktop\\EmailSimulator\\EmailSimulator\\EmailSimulator\\EmailSimulator.csproj",
       "projectName": "EmailSimulator",
-      "projectPath": "C:\\Users\\Pedro\\Desktop\\EmailSimulator\\EmailSimulator\\EmailSimulator\\EmailSimulator.csproj",
-      "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro\\Desktop\\EmailSimulator\\EmailSimulator\\EmailSimulator\\obj\\",
+      "projectPath": "C:\\Users\\Escalasoft\\Desktop\\EmailSimulator\\EmailSimulator\\EmailSimulator\\EmailSimulator.csproj",
+      "packagesPath": "C:\\Users\\Escalasoft\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Escalasoft\\Desktop\\EmailSimulator\\EmailSimulator\\EmailSimulator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Escalasoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

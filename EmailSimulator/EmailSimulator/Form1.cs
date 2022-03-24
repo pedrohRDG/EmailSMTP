@@ -55,7 +55,12 @@ namespace EmailSimulator
             }
         }
 
-       public void ValidaCampoEmail(TextBox prEmail) 
+        public void MontaRespostaServidor()
+        {
+        
+        }
+
+        public void ValidaCampoEmail(TextBox prEmail) 
        {
             if (!IsValidEmail(prEmail.Text))
             {
@@ -97,5 +102,9 @@ namespace EmailSimulator
             ValidaCampoEmail(tEmailCliente);
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

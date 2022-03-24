@@ -33,7 +33,7 @@
             this.tAssunto = new System.Windows.Forms.TextBox();
             this.tMensagem = new System.Windows.Forms.TextBox();
             this.tMensagemCliente = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tServidorLog = new System.Windows.Forms.RichTextBox();
             this.BotaoEnviar = new System.Windows.Forms.Button();
             this.Erro = new System.Windows.Forms.ErrorProvider(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -76,20 +76,23 @@
             this.tMensagemCliente.Margin = new System.Windows.Forms.Padding(20);
             this.tMensagemCliente.Multiline = true;
             this.tMensagemCliente.Name = "tMensagemCliente";
+            this.tMensagemCliente.ReadOnly = true;
             this.tMensagemCliente.Size = new System.Drawing.Size(300, 395);
             this.tMensagemCliente.TabIndex = 3;
             // 
-            // richTextBox1
+            // tServidorLog
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(419, 99);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(70, 90, 70, 90);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(246, 313);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "";
+            this.tServidorLog.Location = new System.Drawing.Point(419, 99);
+            this.tServidorLog.Margin = new System.Windows.Forms.Padding(70, 90, 70, 90);
+            this.tServidorLog.Name = "tServidorLog";
+            this.tServidorLog.ReadOnly = true;
+            this.tServidorLog.Size = new System.Drawing.Size(246, 313);
+            this.tServidorLog.TabIndex = 4;
+            this.tServidorLog.Text = "";
             // 
             // BotaoEnviar
             // 
+            this.BotaoEnviar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BotaoEnviar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BotaoEnviar.Location = new System.Drawing.Point(254, 459);
             this.BotaoEnviar.Name = "BotaoEnviar";
@@ -97,7 +100,7 @@
             this.BotaoEnviar.TabIndex = 5;
             this.BotaoEnviar.Text = "Enviar";
             this.BotaoEnviar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BotaoEnviar.UseVisualStyleBackColor = true;
+            this.BotaoEnviar.UseVisualStyleBackColor = false;
             this.BotaoEnviar.Click += new System.EventHandler(this.bEnviarEmail);
             // 
             // Erro
@@ -107,6 +110,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(29, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 15);
@@ -116,6 +120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(29, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 15);
@@ -125,6 +130,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(29, 179);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 15);
@@ -142,6 +148,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(755, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 15);
@@ -152,6 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1084, 511);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tEmailCliente);
@@ -159,13 +167,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BotaoEnviar);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.tServidorLog);
             this.Controls.Add(this.tMensagemCliente);
             this.Controls.Add(this.tMensagem);
             this.Controls.Add(this.tAssunto);
             this.Controls.Add(this.tEmailRemetente);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Email";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Erro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -178,7 +187,7 @@
         private TextBox tAssunto;
         private TextBox tMensagem;
         private TextBox tMensagemCliente;
-        private RichTextBox richTextBox1;
+        private RichTextBox tServidorLog;
         private Button BotaoEnviar;
         private ErrorProvider Erro;
         private Label label3;
