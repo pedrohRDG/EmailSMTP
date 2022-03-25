@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+kmtrXFRIsP0Qh21obutYo+je8VH2fap2z9RFs+ar3PIjSLiyHQpPnqWQgdlLKBKxVqVd3KWzCoLYZZh3U4+zw==",
+  "dgSpecHash": "08Cv5jcpUVef4NDPY1rTkcnL5GX6Yj7KxbDONymG6KnM8hz2l1qi4SpWfzwwPVJpeyUEIoRc4DFPhE2TguR+bA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\EmailSimulator\\EmailSimulator\\EmailSimulator\\EmailSimulator.csproj",
+  "projectFilePath": "C:\\Users\\Pedro\\Desktop\\EmailSMTP\\EmailSimulator\\EmailSimulator\\EmailSimulator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
