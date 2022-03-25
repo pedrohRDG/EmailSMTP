@@ -60,8 +60,7 @@ namespace EmailSimulator
             if (!IsValidEmail(prEmail.Text))
             {
                 Erro.SetError(prEmail, "Email Invalido");
-                MessageBox.Show(prEmail.Text + " Não é um email valido", "Email invalido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                prEmail.Clear();
+                MessageBox.Show(prEmail.Text + " Não é um email valido", "Email invalido", MessageBoxButtons.OK, MessageBoxIcon.Information);         
                 prEmail.Focus();
             }
             else
@@ -85,21 +84,62 @@ namespace EmailSimulator
 
         public void MontaRespostaServidor()
         {
-          
+            if (IsValidEmail(tEmailRemetente.Text) && (IsValidEmail(tEmailCliente.Text)))
+            {
+                tServerBox.Text = "MAIL FROM: <" + tEmailRemetente.Text + ">" + "\r\n" +
+                                  "250 2.1.0 Sender OK" + "\r\n" +
+                                  "RCPT TO: <" + tEmailCliente.Text + "> NOTIFY=success" + "\r\n" +
+                                  "250 2.1.5 Recipient OK" + "\r\n" +
+                                  "DATA" + "\r\n" +
+                                  "354 Enter mail, end with . on a line by itself" + "\r\n" +
+                                  tAssunto.Text + "\r\n" +
+                                  tMensagem.Text + "\r\n" +
+                                  "." + "\r\n" +
+                                  "QUIT" + "\r\n" +
+                                  "221" + tEmailCliente.Text + " closing connection";
+            }
+            else 
+            {
+                tServerBox.Text = "MAIL FROM: <" + tEmailRemetente.Text + ">" + "\r\n" +
+                                  "550 5.1.7 Invalid address" + "\r\n" +
+                                  "RCPT TO: <" + tEmailCliente.Text + "> NOTIFY=failure" + "\r\n" +
+                                  "550 5.1.1 User unknown";
+            }
+
+        }
+
+        public void MontaRespostaCliente()
+        {
+            if (IsValidEmail(tEmailRemetente.Text) && (IsValidEmail(tEmailCliente.Text)))
+            {
+                tMensagemCliente.Text = tAssunto.Text + "\r\n" +
+                                        tMensagem.Text + "\r\n" + "\r\n" + "\r\n" +
+                                        "Ass. " + tEmailRemetente.Text;
+
+            }
+
         }
 
 
         private void bEnviarEmail(object sender, EventArgs e)
         {
-            //CamposObrigatorios
+            //Campos Obrigatorios
             VerificaCampoObrigatorio(tAssunto);
             VerificaCampoObrigatorio(tMensagem);
             VerificaCampoObrigatorio(tEmailCliente);
             VerificaCampoObrigatorio(tEmailRemetente);
 
-            //ValidaEmails
+            //Valida Emails
             ValidaCampoEmail(tEmailRemetente);
             ValidaCampoEmail(tEmailCliente);
+
+            //Monta Info servidor
+            MontaRespostaServidor();
+
+            //Monta Resposta Clinete
+            MontaRespostaCliente();
+
+
         }
 
     }
