@@ -1,0 +1,17 @@
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\bin\Debug\net6.0-windows\EmailSimulator.exe
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\bin\Debug\net6.0-windows\EmailSimulator.deps.json
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\bin\Debug\net6.0-windows\EmailSimulator.runtimeconfig.json
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\bin\Debug\net6.0-windows\EmailSimulator.dll
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\bin\Debug\net6.0-windows\EmailSimulator.pdb
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.csproj.AssemblyReference.cache
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.Form1.resources
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.csproj.GenerateResource.cache
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.AssemblyInfoInputs.cache
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.AssemblyInfo.cs
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.dll
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\refint\EmailSimulator.dll
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.pdb
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\EmailSimulator.genruntimeconfig.cache
+C:\Users\Pedro\Desktop\EmailSimulator\EmailSimulator\EmailSimulator\obj\Debug\net6.0-windows\ref\EmailSimulator.dll
