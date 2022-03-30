@@ -1,0 +1,5 @@
+C:\Users\Escalasoft\Desktop\EmailSMTP\EmailSimulator\EmailSimulator\bin\Release\net6.0-windows\publish\EmailSimulator.exe
+C:\Users\Escalasoft\Desktop\EmailSMTP\EmailSimulator\EmailSimulator\bin\Release\net6.0-windows\publish\EmailSimulator.dll
+C:\Users\Escalasoft\Desktop\EmailSMTP\EmailSimulator\EmailSimulator\bin\Release\net6.0-windows\publish\EmailSimulator.deps.json
+C:\Users\Escalasoft\Desktop\EmailSMTP\EmailSimulator\EmailSimulator\bin\Release\net6.0-windows\publish\EmailSimulator.runtimeconfig.json
+C:\Users\Escalasoft\Desktop\EmailSMTP\EmailSimulator\EmailSimulator\bin\Release\net6.0-windows\publish\EmailSimulator.pdb
